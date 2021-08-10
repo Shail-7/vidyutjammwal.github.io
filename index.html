@@ -1,210 +1,656 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Vidyut Jammwal</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- 
+	//////////////////////////////////////////////////////
 
-</head>
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
 
-<body>
-    <br>
-    <div class="container-fluid">
-        <div class="container">
-            <h1 class="text-center" id="celebname">
-                Vidyut Jammwal
-            </h1>
-            <article>
-                <p class="basicinfo">
-                    Vidyut Jammwal (born 10 December 1980) is an Indian film actor,
-                    martial artist and stunt performer who predominantly works in Hindi-language action films.
-                    Best known for his roles in action films like Commando series,
-                    he is a trained martial artist who studied the art of kalaripayattu since the age of three.
-                </p>
-                <p class="basicinfo">Vidyut Jammwal is a Dogra Rajput, born in Jammu, Jammu and Kashmir.
-                    He is one of three children born to an Army officer,
-                    and lived in various parts of India (owing to his father's transferable job) and trained in
-                    Kalaripayattu in
-                    an ashram in Palakkad,
-                    Kerala which was run by his mother, since he was three years old.
-                    He traveled to many countries training with martial artists in various forms,
-                    some of which find their base in Kalaripayattu. Jammwal travelled to over 25 countries,
-                    where he performed in live action shows. He participated in Gladrags in the year 2000 and has been
-                    living in
-                    Mumbai ever since.
-                    He was a model in Delhi since 1996, but after a dismal career in modelling, landed his debut role in
-                    Sakthi,
-                    a Telugu film.
-                </p>
-                <a href="https://en.wikipedia.org/wiki/Vidyut_Jammwal" id="wikilink">
-                    Click to visit Wikipedia
-                </a>
+	//////////////////////////////////////////////////////
+	 -->
 
-            </article>
-            <table class="table table-bordered table-striped text-center personalinfotbl">
-                <th colspan="2" class="table-success">Personal Information</th>
-                <tr class="table-primary">
-                    <td class="font-weight-bold">Born</td>
-                    <td> 10 December 1980 (age 40)
-                        Jammu, India</td>
-                </tr>
-                <tr class="table-warning">
-                    <td class="font-weight-bold">Nationality</td>
-                    <td>Indian</td>
-                </tr>
-                <tr class="table-danger">
-                    <td class="font-weight-bold">Occupation</td>
-                    <td>
-                        ActorMartial artistStunt performer
-                    </td>
-                </tr>
-                <tr class="table-secondary">
-                    <td class="font-weight-bold">Age</td>
-                    <td>40</td>
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-                </tr>
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-            </table>
-        </div>
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-        <div class="container">
-            <h1 id="celebname" class="text-center">Images</h1>
-            <div class="row">
-                <img src="https://media2.bollywoodhungama.in/wp-content/uploads/2016/06/Vidyut-Jammwal-3.jpg"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img src="https://www.pinkvilla.com/files/styles/gallery-section/public/vidyutjammwal-lesserknownfacts-hd.jpg?itok=jGauuVJ4"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img src="data:image/jpeg;base64,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"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img style="height: 500px;"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg9CA1hToPkQiuYMXQ2qyGgw_aEoUcreFSmg&usqp=CAU"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img style="height: 500px;"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLR_ZXY57R0x4tcjWTopioMs7XN6IlFU7Qg&usqp=CAU"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img style="height: 550px;"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxX_QqVdPzYSHo_VaiCozs5vfckW8IXcfxw&usqp=CAU"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2rwkTMEm6i99dtpoDxLm0u3ztqVetRiKQQQ&usqp=CAU"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
-                <img src="data:image/jpeg;base64,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"
-                    alt="vidyut image" class="gallery img-fluid col-lg-4 col-md-4 col-sm-12 col-12">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-            </div>
-        </div>
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(images/avatar.jpg);"></div>
+							<h1><span>Sujal Prajapati</span></h1>
+							<h3><span>Web Developer</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter2"></i></a></li>
+									<li><a href="#"><i class="icon-facebook2"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-        <div class="container-fluid">
-            <br><br>
-            <h1 id="celebname" class="text-center">Movies</h1>
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Sujal Rahulkumar Prajapati</span></li>
+						<!-- <li><span class="first-block">Phone:</span><span class="second-block">+ 1235 2355 98</span></li> -->
+						<li><span class="first-block">Email:</span><span class="second-block">sujal5011@gmail.com</span></li>
+						<li><span class="first-block">Website:</span><span class="second-block">www.yoursite.com</span></li>
+						<!-- <li><span class="first-block">Address:</span><span class="second-block">198 West 21th Street, Suite 721 New York NY 10016</span></li> -->
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<h2>Hello There!</h2>
+					<p>I'M Sujal Prajapati. I am a Web Developer. I have completed my Bsc.CA&IT and I also have started my masters in Msc.CA&IT
+					I have completed UI/UX course from Udecity which was started by Google. I also have knowledge about Adobe Photoshop and animation</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter2"></i></a></li>
+							<li><a href="#"><i class="icon-facebook3"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <div class="row card-columns mx-auto">
-                <div class="card cardstyle border-0 col-lg-3 col-md-12 col-sm-12 col-12">
-                    <div class="card-body">
-                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3mG7n6Twi_VW09JgaHuBYCcc5-5Oliz0myd2Rc96HAPA34FDH"
-                            alt="Image Poster" class="imgposter img-fluid">
-                        <div class="container">
-                            <h4>Movie: Commando</h4>
-                            <h5 class="font-weight-bold">IMDb RATING: <span class="rating"> 6.2 ⭐ </span>/10</h5>
-                            <a href="https://www.imdb.com/title/tt2658126/" id="wikilink">See More Details</a>
-                        </div>
-                    </div>
-                </div>
+	<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>My Resume</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<!-- <li class="timeline-heading text-center animate-box">
+							<div><h3>Work Experience</h3></div>
+						</li> -->
+						<!-- <li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Senior Developer</h3>
+									<span class="company">Company Name - 2016 - Current</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Junior Developer</h3>
+									<span class="company">Company Name - 2013 - 2015</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">UI/UX Designer</h3>
+									<span class="company">Company Name - 2010 - 2012</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+						</li> -->
 
-                <div class="card cardstyle border-0 col-lg-3 col-md-4 col-sm-12 col-12">
-                    <div class="card-body">
-                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyX3QYv00HvnTw_gxu97RjpZQK8sLMBWmB2JCdtJXA1ZEhS3Ln"
-                            alt="Image Poster" class="imgposter img-fluid">
-                        <div class="container">
-                            <h4>Movie: Khuda Haafiz</h4>
-                            <h5 class="font-weight-bold">IMDb RATING: <span class="rating"> 7.4 ⭐ </span>/10</h5>
-                            <a href="https://www.imdb.com/title/tt7363104/" id="wikilink">See More Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cardstyle border-0 col-lg-3 col-md-12 col-sm-12 col-12">
-                    <div class="card-body">
-                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBUjLWHqOJGEevEdhcFCq4UV4n95TB4gLzuzi8QYbPEdPCQTlm"
-                            alt="Image Poster" class="imgposter img-fluid">
-                        <div class="container">
-                            <h4>Movie: Junglee</h4>
-                            <h5 class="font-weight-bold">IMDb RATING: <span class="rating"> 5.6 ⭐ </span>/10</h5>
-                            <a href="https://www.imdb.com/title/tt7463730/" id="wikilink">See More Details</a>
-                        </div>
-                    </div>
-                </div>
+						
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Masters Degree - Msc.CA&IT</h3>
+									<span class="company">Gujarat University- 2021 - current</span>
+								</div>
+								<div class="timeline-body">
+									<p>I am currently studying my masters from K.S School of Business Management.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelors Degree - Bsc.CA&IT</h3>
+									<span class="company">Gujarat University- 2019 - 2021</span>
+								</div>
+								<div class="timeline-body">
+									<p>I have completed my bachelors from K.S School Of Business Management</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">UI/UX Course</h3>
+									<span class="company">Udecity - 2021</span>
+								</div>
+								<div class="timeline-body">
+									<p>I have completed UI/UX course that was organized by Google on Udecity</p>
+								</div>
+							</div>
+						</li>
+						<!-- <li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Graduation</h3>
+									<span class="company">College Name - 1994 - 1998</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								</div>
+							</div>
+						</li> -->
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
-                <div class="card cardstyle border-0 col-lg-3 col-md-12 col-sm-12 col-12">
-                    <div class="card-body">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZsQvgmkifwdH58Roeeseyu_DBY8-Bmxx5l_P9sCWq9uoLbI5m"
-                            alt="Image Poster" class="imgposter img-fluid">
+	<!-- <div id="fh5co-features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>My Services</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-paintbrush"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Design</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div>
+					</div>
 
-                        <div class="container">
-                            <h4>Movie: Commando 2</h4>
-                            <h5 class="font-weight-bold">IMDb RATING: <span class="rating"> 5.3 ⭐ </span>/10</h5>
-                            <a href="https://www.imdb.com/title/tt5954088/" id="wikilink">See More Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cardstyle border-0 col-lg-3 col-md-12 col-sm-12 col-12">
-                    <div class="card-body">
-                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsb79t-bvmbi9xXM_Di9h1UXRfn3Qqd74TXTpfCDnYf5xHvdHr"
-                            alt="Image Poster" class="imgposter img-fluid">
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-briefcase"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Branding</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div>
 
-                        <div class="container">
-                            <h4>Movie: Commando 3</h4>
-                            <h5 class="font-weight-bold">IMDb RATING: <span class="rating"> 5.7 ⭐ </span>/10</h5>
-                            <a href="https://www.imdb.com/title/tt8983168/" id="wikilink">See More Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <h1 id="celebname" class="text-center">Awards</h1>
-
-            <div class="row card-columns">
-                <div class="badge mx-auto badgestyle badge-pill badge-primary col-lg-5 col-md-4 col-sm-12 col-12">
-                  <h6 class="awardtxt">Filmfare Award for Best Male Debut</h6>
-                </div>
-                <div class="badge mx-auto badgestyle badge-pill badge-success col-lg-5 col-md-4 col-sm-12 col-12">
-                    <h6 class="awardtxt">IIFA Award for Star Debut of the Year </h6>
-                </div>
-                <div class="badge mx-auto badgestyle badge-pill badge-warning col-lg-5 col-md-4 col-sm-12 col-12">
-                    <h6 class="awardtxt">Zee Cine Award -Umeed Ka Naya Chehra</h6>
-                </div>
-                <div class="badge mx-auto badgestyle badge-pill badge-danger col-lg-5 col-md-4 col-sm-12 col-12">
-                    <h6 class="awardtxt">Stardust Award for Breakthrough Performance</h6>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="container text-center">
-            <h1 id="celebname" class="text-center">Social Media Handlers</h1>
-            <div class="card cardstyle border-0 col-lg-3 col-md-12 col-sm-12 col-12 mx-auto">
-                <div class="card-body">
-                    <img src="https://qph.fs.quoracdn.net/main-qimg-7fb526592f779920422a9ed4664d839c" alt="vidyut image"
-                        class="img-fluid socialimg">
-                    <div class="">
-                        <span class="socialmedia"> <a href="https://www.instagram.com/mevidyutjammwal/?hl=en"> <i class="fa fa-instagram" id="insta"></i></a></span>
-                        <span class="socialmedia"> <a href="https://www.facebook.com/OfficialVidyutJammwal"><i class="fa fa-facebook-f" id="fb"></i></a></span>
-                        <span class="socialmedia"> <a href="https://twitter.com/VidyutJammwal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter" id="tweet"></i></a></span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-search"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Analytics</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
-    </div>
+				<div class="row">
+					<div class="col-md-4 text-center">
 
-</body>
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-bargraph"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Developent</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div>
 
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Marketing</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-chat"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Support</h3>
+								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>HTML5</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>jQuery</strong>80%</span></div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Java Script</strong>80%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>Photoshop</strong>85%</span></div>
+				</div>
+				<!-- <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
+				</div> -->
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<!-- <div class="progress-wrap">
+						<h3><span class="name-left">WordPress</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div> -->
+					<div class="progress-wrap">
+						<h3><span class="name-left">PHP</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Java Script</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">Design</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<!-- <div class="progress-wrap">
+						<h3><span class="name-left">Ruby</span><span class="value-right">70%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-striped active" role="progressbar"
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						  </div>
+						</div>
+					</div> -->
+					<div class="progress-wrap">
+						<h3><span class="name-left">Photoshop</span><span class="value-right">85%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">jQuery</span><span class="value-right">85%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="fh5co-work" class="fh5co-bg-dark">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Work</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Illustration</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Brading</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-3.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Illustration</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-4.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Design</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-5.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Website</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-6.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Illustration</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-7.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Brading</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
+						<div class="desc">
+							<h3>Project Name</h3>
+							<span>Illustration</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+ -->
+	<!-- <div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Post on Medium</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Photoshoot On The Street</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Surfing at Philippines</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Capture Living On Uderwater</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div id="fh5co-started" class="fh5co-bg-dark">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Hire Me!</h2>
+					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+					<p><a href="#" class="btn btn-default btn-lg">Contact Us</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-consult">
+		<div class="video fh5co-video" style="background-image: url(images/contact-us.png);">
+			<div class="overlay"></div>
+		</div>
+		<div class="choose animate-box">
+			<h2>Contact</h2>
+			<form action="#">
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="email" class="form-control" placeholder="Your email address">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" class="btn btn-primary">
+				</div>
+
+			</form>	
+		</div>
+	</div>
+
+	<!-- <div id="map" class="fh5co-map"></div>
+	</div>
+	
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
